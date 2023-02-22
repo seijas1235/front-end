@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Prueba Tecnica Gustavo Seijas</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.2/css/jquery.dataTables.css">
+   
+	</head>
+	<body>
+		<div id="page-wrapper">
+
+				<section id="header">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+									<h1><a href="index.html" id="logo">busqueda por carne</a></h1>
+									<nav id="nav">
+										<a href="index.html">Crear</a>
+										<a href="card.html">busqueda por carnet</a>
+										<a href="date_admission.html">busqueda por fechas</a>
+									</nav>
+
+							</div>
+						</div>
+					</div>
+
+				</section>
+				<section id="body">
+					<form action="#" method="post">
+						<div class='row'>
+							<div>
+								<label for="name" class="form-control">Fecha inicial:</label>
+								<input type="date"  class="form-control" id="initial_date" name="initial_date">
+								<label for="name" class="form-control">Fecha final:</label>
+								<input type="date"  class="form-control" id="final_date" name="final_date">
+							</div> 
+						<div>
+						<input type="button" name="Guardar" id="" class="btn btn-primary" href="#" role="button" value= "Buscar">
+					</form>
+					<div stile="margin: 1">
+						<table id="table_id" class="display">
+							<thead>
+								<tr>
+									<th>Carnet</th>
+									<th>Nombre del alumno</th>
+									<th>Fecha de nacimiento</th>
+									<th>Nombre del padre</th>
+									<th>Nombre de la madre</th>
+									<th>Grado</th>
+									<th>Sección</th>
+									<th>Fecha de ingreso</th>
+									
+								</tr>
+							</thead>
+							<tbody>
+							</tbody>
+						</table>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>	 
+			<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.js"></script>
+			<script>
+				$(document).ready( function () {
+					$('#table_id').DataTable();
+				} );
+			</script>
+	</body>
+</html>
